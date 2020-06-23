@@ -3,7 +3,7 @@
  * @Author: gogoend
  * @Date: 2020-06-24 00:23:37
  * @LastEditors: gogoend
- * @LastEditTime: 2020-06-24 00:34:14
+ * @LastEditTime: 2020-06-24 00:40:01
  * @FilePath: \gogoend\single.php
  * @Description: 
  */
@@ -58,6 +58,10 @@
                                 <?php edit_post_link('Edit', ' | ', ''); ?>
                             </div>
                         </aside>
+                        <!-- 评论框 -->
+                        <div class="comments-template">
+                            <?php comments_template(); ?>
+                        </div>
                     </li>
                 <?php endwhile; ?>
                 <nav>

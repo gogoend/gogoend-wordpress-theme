@@ -3,7 +3,7 @@
  * @Author: gogoend
  * @Date: 2020-06-23 21:22:38
  * @LastEditors: gogoend
- * @LastEditTime: 2020-06-24 00:12:29
+ * @LastEditTime: 2020-06-24 00:20:17
  * @FilePath: \gogoend\index.php
  * @Description: 增加页脚
  */
@@ -82,43 +82,8 @@
       <?php endif; ?>
     </ul>
   </main>
-  <aside>
-    <ul>
-      <li class="search">
-        <?php include(TEMPLATEPATH . './searchform.php') ?>
-      </li>
-      <li class="calendar">
-        <h2><?php _e('Calendar'); ?></h2>
-        <?php get_calendar(); ?>
-      </li>
-      <?php wp_list_pages(); ?>
-      <li>
-        <h2><?php _e('Categories'); ?></h2>
-        <ul>
-          <?php wp_list_cats('sort_column=name&optioncount=1&hierarchical=0'); ?>
-        </ul>
-      </li>
-      <li>
-        <h2><?php _e('Archives'); ?></h2>
-        <ul>
-          <?php wp_get_archives('type=monthly'); ?>
-        </ul>
-      </li>
-      <?php get_links_list(); ?>
-      <li>
-        <h2><?php _e('Meta'); ?></h2>
-        <ul>
-          <?php wp_register(); ?>
-
-          <li><?php wp_loginout(); ?></li>
-          <?php wp_meta(); ?>
-        </ul>
-      </li>
-    </ul>
-  </aside>
-  <footer>
-    Copyright © 2007 <?php bloginfo('name'); ?>
-  </footer>
+<?php get_sidebar(); ?>
+<?php get_footer(); ?>
 </body>
 
 </html>

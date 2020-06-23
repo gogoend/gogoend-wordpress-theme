@@ -3,9 +3,9 @@
  * @Author: gogoend
  * @Date: 2020-06-23 21:22:38
  * @LastEditors: gogoend
- * @LastEditTime: 2020-06-23 23:22:33
+ * @LastEditTime: 2020-06-23 23:27:04
  * @FilePath: \gogoend\index.php
- * @Description: 增加Else - 无日志错误提示；为超链接增加日志id等内容
+ * @Description: 增加下一页按钮
  */
 
 /**
@@ -72,6 +72,9 @@
             </aside>
           </li>
         <?php endwhile; ?>
+        <nav>
+          <?php posts_nav_link(); ?>
+        </nav>
       <?php else : ?>
         <div class="post">
           <h2><?php _e('Not Found'); ?></h2>

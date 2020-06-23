@@ -3,9 +3,9 @@
  * @Author: gogoend
  * @Date: 2020-06-23 21:22:38
  * @LastEditors: gogoend
- * @LastEditTime: 2020-06-23 23:27:04
+ * @LastEditTime: 2020-06-23 23:29:48
  * @FilePath: \gogoend\index.php
- * @Description: 增加下一页按钮
+ * @Description: 定制上一页、下一页按钮（分页导航）
  */
 
 /**
@@ -73,7 +73,7 @@
           </li>
         <?php endwhile; ?>
         <nav>
-          <?php posts_nav_link(); ?>
+          <?php posts_nav_link('in between','befor','after'); ?>
         </nav>
       <?php else : ?>
         <div class="post">

@@ -3,9 +3,9 @@
  * @Author: gogoend
  * @Date: 2020-06-23 21:22:38
  * @LastEditors: gogoend
- * @LastEditTime: 2020-06-23 23:00:33
+ * @LastEditTime: 2020-06-23 23:04:30
  * @FilePath: \gogoend\index.php
- * @Description: 日志加链接
+ * @Description: 展示文字内容
  */
 
 /**
@@ -49,6 +49,7 @@
         <?php while (have_posts()) : the_post(); ?>
           <li>
             <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
+            <?php the_content(); ?>
           </li>
         <?php endwhile; ?>
       <?php endif; ?>

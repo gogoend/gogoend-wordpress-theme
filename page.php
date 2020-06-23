@@ -3,7 +3,7 @@
  * @Author: gogoend
  * @Date: 2020-06-24 00:23:37
  * @LastEditors: gogoend
- * @LastEditTime: 2020-06-24 00:29:31
+ * @LastEditTime: 2020-06-24 00:29:58
  * @FilePath: \gogoend\page.php
  * @Description: 
  */
@@ -40,31 +40,10 @@
                     <li data-id="post-<?php the_ID(); ?>" class="post">
                         <h2><a title="<?php the_title(); ?>" href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
                         <section><?php the_content(); ?></section>
-                        <aside>
-                            <div>
-                                <?php _e('Filed under:'); ?>
-                            </div>
-                            <div>
-                                <?php the_category(',') ?>
-                            </div>
-                            <div>
-                                <?php _e('by'); ?>
-                            </div>
-                            <div>
-                                <?php the_author(); ?>
-                            </div>
-                            <div>
-                                <?php comments_popup_link('No Comments »', '1 Comment »', '% Comments »'); ?>
-                            </div>
-                            <div>
-                                <?php edit_post_link('Edit', ' | ', ''); ?>
-                            </div>
-                        </aside>
+                        <?php link_pages('<strong>Pages:</strong>','', 'number'); ?>
+                        <?php edit_post_link('Edit', '', ''); ?>
                     </li>
                 <?php endwhile; ?>
-                <nav>
-                    <?php posts_nav_link('in between', 'befor', 'after'); ?>
-                </nav>
             <?php else : ?>
                 <div class="post">
                     <h2><?php _e('Not Found'); ?></h2>

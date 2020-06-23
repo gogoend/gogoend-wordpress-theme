@@ -3,7 +3,7 @@
  * @Author: gogoend
  * @Date: 2020-06-24 00:23:37
  * @LastEditors: gogoend
- * @LastEditTime: 2020-06-24 00:24:51
+ * @LastEditTime: 2020-06-24 00:34:14
  * @FilePath: \gogoend\single.php
  * @Description: 
  */
@@ -40,6 +40,7 @@
                     <li data-id="post-<?php the_ID(); ?>" class="post">
                         <h2><a title="<?php the_title(); ?>" href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
                         <section><?php the_content(); ?></section>
+                        <?php link_pages('<strong>Pages:</strong>', '', 'number'); ?>
                         <aside>
                             <div>
                                 <?php _e('Filed under:'); ?>
@@ -54,16 +55,14 @@
                                 <?php the_author(); ?>
                             </div>
                             <div>
-                                <?php comments_popup_link('No Comments »', '1 Comment »', '% Comments »'); ?>
-                            </div>
-                            <div>
                                 <?php edit_post_link('Edit', ' | ', ''); ?>
                             </div>
                         </aside>
                     </li>
                 <?php endwhile; ?>
                 <nav>
-                    <?php posts_nav_link('in between', 'befor', 'after'); ?>
+                    <!-- 上一篇 下一篇 -->
+                    <?php previous_post_link('%link') ?> <?php next_post_link('%link') ?>
                 </nav>
             <?php else : ?>
                 <div class="post">

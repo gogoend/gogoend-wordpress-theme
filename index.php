@@ -3,9 +3,9 @@
  * @Author: gogoend
  * @Date: 2020-06-23 21:22:38
  * @LastEditors: gogoend
- * @LastEditTime: 2020-06-24 00:06:48
+ * @LastEditTime: 2020-06-24 00:12:29
  * @FilePath: \gogoend\index.php
- * @Description: 添加搜索框和日历。以及管理页面入口
+ * @Description: 增加页脚
  */
 
 /**
@@ -116,7 +116,9 @@
       </li>
     </ul>
   </aside>
-  <footer></footer>
+  <footer>
+    Copyright © 2007 <?php bloginfo('name'); ?>
+  </footer>
 </body>
 
 </html>

@@ -3,9 +3,9 @@
  * @Author: gogoend
  * @Date: 2020-06-23 21:22:38
  * @LastEditors: gogoend
- * @LastEditTime: 2020-06-23 22:10:54
+ * @LastEditTime: 2020-06-23 22:56:30
  * @FilePath: \gogoend\index.php
- * @Description: 
+ * @Description: 加入主循环 打印日志标题
  */
 
 /**
@@ -43,7 +43,12 @@
 
 <body>
   <?php get_header(); ?>
-  <main></main>
+  <main>
+    <?php if (have_posts()) : ?><?php while (have_posts()) : the_post(); ?>
+      <?php the_title(); ?>
+    <?php endwhile; ?>
+    <?php endif; ?>
+  </main>
   <aside></aside>
   <footer></footer>
 </body>

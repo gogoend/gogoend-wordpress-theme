@@ -3,9 +3,9 @@
  * @Author: gogoend
  * @Date: 2020-06-23 21:22:38
  * @LastEditors: gogoend
- * @LastEditTime: 2020-06-23 23:57:39
+ * @LastEditTime: 2020-06-24 00:06:48
  * @FilePath: \gogoend\index.php
- * @Description: 添加存档和链接列表
+ * @Description: 添加搜索框和日历。以及管理页面入口
  */
 
 /**
@@ -84,6 +84,13 @@
   </main>
   <aside>
     <ul>
+      <li class="search">
+        <?php include(TEMPLATEPATH . './searchform.php') ?>
+      </li>
+      <li class="calendar">
+        <h2><?php _e('Calendar'); ?></h2>
+        <?php get_calendar(); ?>
+      </li>
       <?php wp_list_pages(); ?>
       <li>
         <h2><?php _e('Categories'); ?></h2>
@@ -97,8 +104,17 @@
           <?php wp_get_archives('type=monthly'); ?>
         </ul>
       </li>
+      <?php get_links_list(); ?>
+      <li>
+        <h2><?php _e('Meta'); ?></h2>
+        <ul>
+          <?php wp_register(); ?>
+
+          <li><?php wp_loginout(); ?></li>
+          <?php wp_meta(); ?>
+        </ul>
+      </li>
     </ul>
-    <?php get_links_list(); ?>
   </aside>
   <footer></footer>
 </body>

@@ -3,9 +3,9 @@
  * @Author: gogoend
  * @Date: 2020-06-23 21:22:38
  * @LastEditors: gogoend
- * @LastEditTime: 2020-06-23 23:37:17
+ * @LastEditTime: 2020-06-23 23:39:12
  * @FilePath: \gogoend\index.php
- * @Description: 添加分类侧边栏
+ * @Description: 添加页面链接列表
  */
 
 /**
@@ -85,6 +85,8 @@
   <aside>
     <ul>
       <li>
+        <?php wp_list_pages(); ?>
+
         <h2><?php _e('Categories'); ?></h2>
         <ul>
           <?php wp_list_cats('sort_column=name&optioncount=1&hierarchical=0'); ?>

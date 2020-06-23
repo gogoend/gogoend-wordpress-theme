@@ -3,9 +3,9 @@
  * @Author: gogoend
  * @Date: 2020-06-23 21:22:38
  * @LastEditors: gogoend
- * @LastEditTime: 2020-06-23 22:56:30
+ * @LastEditTime: 2020-06-23 23:00:33
  * @FilePath: \gogoend\index.php
- * @Description: 加入主循环 打印日志标题
+ * @Description: 日志加链接
  */
 
 /**
@@ -44,10 +44,15 @@
 <body>
   <?php get_header(); ?>
   <main>
-    <?php if (have_posts()) : ?><?php while (have_posts()) : the_post(); ?>
-      <?php the_title(); ?>
-    <?php endwhile; ?>
-    <?php endif; ?>
+    <ul>
+      <?php if (have_posts()) : ?>
+        <?php while (have_posts()) : the_post(); ?>
+          <li>
+            <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
+          </li>
+        <?php endwhile; ?>
+      <?php endif; ?>
+    </ul>
   </main>
   <aside></aside>
   <footer></footer>

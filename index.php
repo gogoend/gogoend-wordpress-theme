@@ -3,9 +3,9 @@
  * @Author: gogoend
  * @Date: 2020-06-23 21:22:38
  * @LastEditors: gogoend
- * @LastEditTime: 2020-06-23 23:04:30
+ * @LastEditTime: 2020-06-23 23:07:15
  * @FilePath: \gogoend\index.php
- * @Description: 展示文字内容
+ * @Description: 一点点代码风格整理
  */
 
 /**
@@ -48,8 +48,8 @@
       <?php if (have_posts()) : ?>
         <?php while (have_posts()) : the_post(); ?>
           <li>
-            <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
-            <?php the_content(); ?>
+            <h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
+            <section><?php the_content(); ?></section>
           </li>
         <?php endwhile; ?>
       <?php endif; ?>

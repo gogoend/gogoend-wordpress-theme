@@ -3,9 +3,9 @@
  * @Author: gogoend
  * @Date: 2020-06-23 21:22:38
  * @LastEditors: gogoend
- * @LastEditTime: 2020-06-23 23:29:48
+ * @LastEditTime: 2020-06-23 23:37:17
  * @FilePath: \gogoend\index.php
- * @Description: 定制上一页、下一页按钮（分页导航）
+ * @Description: 添加分类侧边栏
  */
 
 /**
@@ -73,7 +73,7 @@
           </li>
         <?php endwhile; ?>
         <nav>
-          <?php posts_nav_link('in between','befor','after'); ?>
+          <?php posts_nav_link('in between', 'befor', 'after'); ?>
         </nav>
       <?php else : ?>
         <div class="post">
@@ -82,7 +82,16 @@
       <?php endif; ?>
     </ul>
   </main>
-  <aside></aside>
+  <aside>
+    <ul>
+      <li>
+        <h2><?php _e('Categories'); ?></h2>
+        <ul>
+          <?php wp_list_cats('sort_column=name&optioncount=1&hierarchical=0'); ?>
+        </ul>
+      </li>
+    </ul>
+  </aside>
   <footer></footer>
 </body>
 

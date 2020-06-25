@@ -49,7 +49,12 @@
         <?php while (have_posts()) : the_post(); ?>
           <li data-id="post-<?php the_ID(); ?>" class="post">
             <h2><a title="<?php the_title(); ?>" href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
-            <section><?php the_content(); ?></section>
+            <section>
+              <?php
+              // the_content();
+              the_excerpt();
+              ?>
+            </section>
             <aside>
               <div>
                 <?php _e('Filed under:'); ?>

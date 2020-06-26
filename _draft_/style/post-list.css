@@ -1,0 +1,33 @@
+ul.go-post-list {
+  margin-right: 1em;
+  padding: 1em;
+}
+ul.go-post-list li.go-post-item {
+  background-color: #f0f0f0;
+  position: relative;
+  margin-bottom: 1.5em;
+  box-shadow: 0 0 10px #0003;
+}
+ul.go-post-list li.go-post-item:not(:last-of-type) {
+  border-bottom: 2px dashed #063;
+}
+ul.go-post-list li.go-post-item h2.post-title {
+  margin: 0;
+  padding: 0.5em;
+}
+ul.go-post-list li.go-post-item section.post-excerpt {
+  margin: 0 1em;
+  padding: 0.5em 1em;
+  border-left: 2px solid #3bd4a1;
+  color: #555;
+}
+ul.go-post-list li.go-post-item section.post-excerpt > p {
+  margin-top: 0;
+  margin-bottom: 0;
+  line-height: 1.5em;
+}
+ul.go-post-list li.go-post-item aside.go-post-aside-info {
+  display: flex;
+  justify-content: space-between;
+  padding: 1em 1em;
+}

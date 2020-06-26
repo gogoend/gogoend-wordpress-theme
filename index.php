@@ -3,8 +3,8 @@
  * @Author: gogoend
  * @Date: 2020-06-23 21:22:38
  * @LastEditors: gogoend
- * @LastEditTime: 2020-06-24 00:20:17
- * @FilePath: \gogoend\index.php
+ * @LastEditTime: 2020-06-27 03:21:03
+ * @FilePath: \gogoend-wordpress-theme\index.php
  * @Description: 增加页脚
  */
 
@@ -39,56 +39,60 @@
 
   <?php wp_get_archives('type=monthly&format=link'); ?>
   <?php wp_head(); ?>
+  <link rel="stylesheet" href="./wp-content/themes/gogoend-wordpress-theme/_draft_/style/common-style.css" />
 </head>
 
 <body>
   <?php get_header(); ?>
-  <main>
-    <ul>
+  <main class="go-page-main-wrap">
+    <ul class="go-post-list">
       <?php if (have_posts()) : ?>
         <?php while (have_posts()) : the_post(); ?>
-          <li data-id="post-<?php the_ID(); ?>" class="post">
-            <h2><a title="<?php the_title(); ?>" href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
-            <section>
+          <li data-id="post-<?php the_ID(); ?>" class="go-post-item">
+            <h2 class="post-title">
+              <a title="<?php the_title(); ?>" href="<?php the_permalink(); ?>">
+                <?php the_title(); ?>
+              </a>
+            </h2>
+            <section class="post-excerpt">
               <?php
-              // the_content();
-              the_excerpt();
+                the_excerpt();
               ?>
             </section>
-            <aside>
-              <div>
-                <?php _e('Filed under:'); ?>
+            <aside class="go-post-aside-info">
+              <div class="go-post-category">
+                分类：<?php the_category('&nbsp;') ?>
               </div>
-              <div>
-                <?php the_category(',') ?>
-              </div>
-              <div>
+              <!-- <div>
                 <?php _e('by'); ?>
               </div>
               <div>
                 <?php the_author(); ?>
-              </div>
-              <div>
-                <?php comments_popup_link('No Comments »', '1 Comment »', '% Comments »'); ?>
-              </div>
-              <div>
-                <?php edit_post_link('Edit', ' | ', ''); ?>
-              </div>
+              </div> -->
+              <section>
+                <div class="go-post-comments">
+                  <?php comments_popup_link('评论(0)', '评论(1)', '评论(%)'); ?>
+                </div>
+                <div class="go-post-edit">
+                  <?php edit_post_link('Edit', ' | ', ''); ?>
+                </div>
+              </section>
             </aside>
           </li>
         <?php endwhile; ?>
         <nav>
-          <?php posts_nav_link('in between', 'befor', 'after'); ?>
         </nav>
       <?php else : ?>
-        <div class="post">
+        <li class="go-post">
           <h2><?php _e('Not Found'); ?></h2>
-        </div>
+        </li>
       <?php endif; ?>
     </ul>
+    <?php posts_nav_link('in between', 'befor', 'after'); ?>
+
+    <?php get_sidebar(); ?>
   </main>
-<?php get_sidebar(); ?>
-<?php get_footer(); ?>
+  <?php get_footer(); ?>
 </body>
 
 </html>

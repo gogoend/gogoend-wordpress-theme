@@ -1,0 +1,26 @@
+.go-page-main-wrap {
+    display: flex;
+    margin: 0 auto;
+    width: 80vw;
+
+    .go-post-list {
+        flex-grow: 1;
+    }
+
+    .go-main-sidebar {
+        position: sticky;
+        top: 0;
+        height: max-content;
+        flex-basis: 200px;
+        flex-shrink: 0;
+        width: auto;
+        transition: 0.5s ease all;
+        .sidebar-block{
+            h2{
+                margin:0;
+                padding: 0.5em 0;
+            }
+        }
+    }
+
+}

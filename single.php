@@ -3,7 +3,7 @@
  * @Author: gogoend
  * @Date: 2020-06-24 00:23:37
  * @LastEditors: gogoend
- * @LastEditTime: 2020-06-27 04:04:26
+ * @LastEditTime: 2020-06-27 23:42:16
  * @FilePath: \gogoend-wordpress-theme\single.php
  * @Description: 
  */
@@ -32,51 +32,57 @@
 </head>
 
 <body>
-    <?php get_header(); ?>
-    <main>
-        <ul>
-            <?php if (have_posts()) : ?>
-                <?php while (have_posts()) : the_post(); ?>
-                    <li data-id="post-<?php the_ID(); ?>" class="post">
-                        <h2><a title="<?php the_title(); ?>" href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
-                        <section><?php the_content(); ?></section>
-                        <?php wp_link_pages('<strong>Pages:</strong>', '', 'number'); ?>
-                        <aside>
-                            <div>
-                                <?php _e('Filed under:'); ?>
-                            </div>
-                            <div>
-                                <?php the_category(',') ?>
-                            </div>
-                            <div>
-                                <?php _e('by'); ?>
-                            </div>
-                            <div>
-                                <?php the_author(); ?>
-                            </div>
-                            <div>
-                                <?php edit_post_link('Edit', ' | ', ''); ?>
-                            </div>
-                        </aside>
-                        <!-- 评论框 -->
-                        <div class="comments-template">
-                            <?php comments_template(); ?>
+    <div class="go-global-whole-wrap">
+
+        <?php get_header(); ?>
+        <div class="go-page-main-wrap">
+
+            <main class="go-page-main global-container-max-w">
+                <div class="go-post-article-wrap">
+                    <?php if (have_posts()) : ?>
+                        <?php while (have_posts()) : the_post(); ?>
+                            <section data-id="post-<?php the_ID(); ?>" class="go-post-article-area">
+                                <h1><a title="<?php the_title(); ?>" href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h1>
+                                <aside class="go-post-info">
+                                    <span>
+                                        发布于<?php echo get_the_time('Y年m月d日 H:i') ?>，点击数：<?php post_views('', ''); ?>
+                                    </span>
+                                    <span class="category">
+                                        分类：<?php the_category(' ') ?>
+                                    </span>
+                                    <!-- <div class="tag">
+                                        标签：<?php the_tags(' ') ?>
+                                    </div> -->
+                                    <!-- <div>
+                                            <?php _e('by'); ?>
+                                            <?php the_author(); ?>
+                                            <?php edit_post_link('Edit', ' | ', ''); ?>
+                                        </div> -->
+                                </aside>
+                                <hr />
+                                <article class="go-post-article clear-fix markdown-body"><?php the_content(); ?></article>
+                                <?php wp_link_pages('<strong>Pages:</strong>', '', 'number'); ?>
+                                <!-- 评论框 -->
+                                <div class="comments-template">
+                                    <?php comments_template(); ?>
+                                </div>
+                            </section>
+                        <?php endwhile; ?>
+                        <nav>
+                            <!-- 上一篇 下一篇 -->
+                            <?php previous_post_link('%link') ?> <?php next_post_link('%link') ?>
+                        </nav>
+                    <?php else : ?>
+                        <div class="post">
+                            <h2><?php _e('Not Found'); ?></h2>
                         </div>
-                    </li>
-                <?php endwhile; ?>
-                <nav>
-                    <!-- 上一篇 下一篇 -->
-                    <?php previous_post_link('%link') ?> <?php next_post_link('%link') ?>
-                </nav>
-            <?php else : ?>
-                <div class="post">
-                    <h2><?php _e('Not Found'); ?></h2>
+                    <?php endif; ?>
                 </div>
-            <?php endif; ?>
-        </ul>
-    </main>
-    <?php get_sidebar(); ?>
-    <?php get_footer(); ?>
+                <?php get_sidebar(); ?>
+            </main>
+        </div>
+        <?php get_footer(); ?>
+    </div>
 </body>
 
 </html>

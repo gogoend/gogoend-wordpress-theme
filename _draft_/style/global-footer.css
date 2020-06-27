@@ -3,7 +3,7 @@
   height: 6em;
   position: relative;
   align-items: center;
-  margin-top: 2em;
+  margin-top: 3em;
 }
 .go-global-footer::before {
   content: '';
@@ -14,7 +14,7 @@
   height: 100%;
   z-index: -1;
   display: block;
-  padding-top: 3vw;
+  padding-top: 3vh;
   background-image: linear-gradient(3deg, #22aa8a 0%, #41d675 70%, transparent 70%);
   mix-blend-mode: lighten;
 }
@@ -22,4 +22,5 @@
   width: 80vw;
   margin: 0 auto;
   color: #fff;
+  height: 6em;
 }

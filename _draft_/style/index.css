@@ -6,6 +6,18 @@
 .go-page-main-wrap .go-page-main .go-post-list-wrap {
   flex-grow: 1;
 }
+.go-page-main-wrap .go-page-main .go-post-article-wrap {
+  max-width: 82%;
+}
+.go-page-main-wrap .go-page-main .go-post-article-wrap .go-post-article-area {
+  margin: 1em 2em;
+  padding: 1em;
+}
+.go-page-main-wrap .go-page-main .go-post-article-wrap .go-post-article-area .go-post-info {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+}
 .go-page-main-wrap .go-page-main .go-main-sidebar {
   position: sticky;
   top: 0;
@@ -19,4 +31,7 @@
 .go-page-main-wrap .go-page-main .go-main-sidebar .sidebar-block h2 {
   margin: 0;
   padding: 0.5em 0;
+}
+.go-page-main-wrap .go-page-main .go-main-sidebar .sidebar-block ul li {
+  line-height: 2em;
 }

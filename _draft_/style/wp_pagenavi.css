@@ -1,0 +1,17 @@
+.wp-pagenavi {
+  margin-top: 1em;
+  text-align: center;
+}
+.wp-pagenavi .pages {
+  border-color: transparent;
+}
+.wp-pagenavi .current.current {
+  color: #fff;
+  border-color: #22aa8a;
+  background-color: #22aa8a;
+}
+.wp-pagenavi a.page,
+.wp-pagenavi .current {
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+}

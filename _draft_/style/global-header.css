@@ -1,5 +1,12 @@
 .go-global-header {
   position: relative;
+  background-color: #333;
+}
+.go-global-header a:link,
+.go-global-header a:visited,
+.go-global-header a:hover,
+.go-global-header a:active {
+  color: #40d576;
 }
 .go-global-header .go-global-header-wrap {
   margin: 0 auto;

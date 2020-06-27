@@ -3,7 +3,7 @@
  * @Author: gogoend
  * @Date: 2020-06-23 21:22:38
  * @LastEditors: gogoend
- * @LastEditTime: 2020-06-27 15:38:51
+ * @LastEditTime: 2020-06-27 22:44:44
  * @FilePath: \gogoend-wordpress-theme\index.php
  * @Description: 增加页脚
  */
@@ -90,7 +90,7 @@
               </li>
             <?php endif; ?>
           </ul>
-          <?php posts_nav_link('in between', 'befor', 'after'); ?>
+          <?php if ( function_exists('wp_pagenavi') ) wp_pagenavi(); ?>
         </div>
         <?php get_sidebar(); ?>
       </main>

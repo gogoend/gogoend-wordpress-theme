@@ -3,7 +3,7 @@
 * @Author: gogoend
 * @Date: 2020-06-23 21:32:23
  * @LastEditors: gogoend
- * @LastEditTime: 2020-06-27 14:07:13
+ * @LastEditTime: 2020-06-27 15:50:50
  * @FilePath: \gogoend-wordpress-theme\header.php
 * @Description:
 */
@@ -18,7 +18,7 @@
             <?php wp_list_pages('title_li='); ?>
         </ul>
         <div class="go-search-form-wrap">
-            <?php include(TEMPLATEPATH . './searchform.php') ?>
+            <?php include(TEMPLATEPATH . '/searchform.php') ?>
         </div>
     </div>
 </header>

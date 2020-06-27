@@ -3,7 +3,7 @@
  * @Author: gogoend
  * @Date: 2020-06-26 15:54:37
  * @LastEditors: gogoend
- * @LastEditTime: 2020-06-28 01:39:27
+ * @LastEditTime: 2020-06-28 02:11:11
  * @FilePath: \gogoend-wordpress-theme\404.php
  * @Description: 
  */
@@ -14,7 +14,7 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title><?php bloginfo('name'); ?> <?php wp_title(); ?></title>
+    <title><?php wp_title('&raquo;',true,'right'); ?><?php bloginfo('name'); ?> </title>
 
 	<meta http-equiv="Content-Type" content="<?php bloginfo('html_type'); ?>; charset=<?php bloginfo('charset'); ?>" />
 	<meta name="generator" content="WordPress <?php bloginfo('version'); ?>" />

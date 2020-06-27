@@ -1,7 +1,17 @@
-.global-header {
+.go-global-header {
+  position: relative;
+}
+.go-global-header .go-global-header-wrap {
+  margin: 0 auto;
+  height: 50px;
+  width: 85vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.go-global-header .go-global-header-wrap .pages-link {
   display: flex;
 }
-nav.top-bar {
-  background-color: #ddd;
-  height: 60px;
+.go-global-header .go-global-header-wrap .pages-link li {
+  margin: auto 1em;
 }

@@ -2,14 +2,12 @@ ul.go-post-list {
     margin-right: 1em;
     padding:1em;
     li.go-post-item {
-        background-color: #f0f0f0;
+        // background-color: #f0f0f0;
         position: relative;
-        margin-bottom: 1.5em;
-        box-shadow: 0 0 10px #0003;
-        // padding:1em 0;
-        &:not(:last-of-type) {
-            border-bottom: 2px dashed #063;
-        }
+        // margin-bottom: 1.5em;
+        // box-shadow: 0 0 10px #0003;
+        padding:1em;
+        border-bottom: 1px dashed rgb(110, 218, 164);
 
         // &::before,
         // &::after {
@@ -31,8 +29,8 @@ ul.go-post-list {
         // }
 
         h2.post-title {
-            margin: 0;
-            padding: 0.5em;
+            // margin: 0;
+            margin: 0.5em;
         }
 
         section.post-excerpt {
@@ -49,7 +47,10 @@ ul.go-post-list {
         aside.go-post-aside-info{
             display: flex;
             justify-content: space-between;
-            padding: 1em 1em;
+            margin:1em;
+            .operation{
+                display: flex;
+            }
         }
     }
 }

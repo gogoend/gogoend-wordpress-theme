@@ -1,7 +1,27 @@
-.global-header{
-    display: flex;
-}
-nav.top-bar{
-    background-color: #ddd;
-    height: 60px;
+.go-global-header {
+    position: relative;
+    // &::before {
+    //     content: '';
+    //     position: absolute;
+    //     left:0;
+    //     top:0;
+    // }
+
+    .go-global-header-wrap {
+        margin: 0 auto;
+        height: 50px;
+        width: 85vw;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .pages-link {
+            display: flex;
+
+            li {
+                margin: auto 1em;
+                // height:100%;
+            }
+        }
+    }
 }

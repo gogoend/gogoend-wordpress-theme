@@ -3,8 +3,8 @@
  * @Author: gogoend
  * @Date: 2020-06-24 00:23:37
  * @LastEditors: gogoend
- * @LastEditTime: 2020-06-24 00:29:58
- * @FilePath: \gogoend\page.php
+ * @LastEditTime: 2020-06-27 04:04:11
+ * @FilePath: \gogoend-wordpress-theme\page.php
  * @Description: 
  */
 ?>
@@ -40,7 +40,7 @@
                     <li data-id="post-<?php the_ID(); ?>" class="post">
                         <h2><a title="<?php the_title(); ?>" href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
                         <section><?php the_content(); ?></section>
-                        <?php link_pages('<strong>Pages:</strong>','', 'number'); ?>
+                        <?php wp_link_pages('<strong>Pages:</strong>','', 'number'); ?>
                         <?php edit_post_link('Edit', '', ''); ?>
                     </li>
                 <?php endwhile; ?>

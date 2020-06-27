@@ -1,12 +1,12 @@
-.go-page-main-wrap {
+.go-page-main-wrap .go-page-main {
   display: flex;
   margin: 0 auto;
   width: 80vw;
 }
-.go-page-main-wrap .go-post-list {
+.go-page-main-wrap .go-page-main .go-post-list-wrap {
   flex-grow: 1;
 }
-.go-page-main-wrap .go-main-sidebar {
+.go-page-main-wrap .go-page-main .go-main-sidebar {
   position: sticky;
   top: 0;
   height: max-content;
@@ -14,8 +14,9 @@
   flex-shrink: 0;
   width: auto;
   transition: 0.5s ease all;
+  padding: 1em;
 }
-.go-page-main-wrap .go-main-sidebar .sidebar-block h2 {
+.go-page-main-wrap .go-page-main .go-main-sidebar .sidebar-block h2 {
   margin: 0;
   padding: 0.5em 0;
 }

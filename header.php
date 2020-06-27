@@ -3,16 +3,22 @@
 * @Author: gogoend
 * @Date: 2020-06-23 21:32:23
  * @LastEditors: gogoend
- * @LastEditTime: 2020-06-27 03:28:02
+ * @LastEditTime: 2020-06-27 14:07:13
  * @FilePath: \gogoend-wordpress-theme\header.php
 * @Description:
 */
 ?>
-<header class="global-header">
-    <h1>
-        <a href="<?php bloginfo('url'); ?>"><?php bloginfo('name'); ?></a>
-    </h1>
-    <!-- <?php bloginfo('description'); ?> -->
-    <?php wp_list_pages('0'); ?>
-
+<header class="go-global-header">
+    <div class="go-global-header-wrap global-container-max-w">
+        <div class="logo">
+            <a href="<?php bloginfo('url'); ?>"><?php bloginfo('name'); ?></a>
+        </div>
+        <!-- <?php bloginfo('description'); ?> -->
+        <ul class="pages-link">
+            <?php wp_list_pages('title_li='); ?>
+        </ul>
+        <div class="go-search-form-wrap">
+            <?php include(TEMPLATEPATH . './searchform.php') ?>
+        </div>
+    </div>
 </header>

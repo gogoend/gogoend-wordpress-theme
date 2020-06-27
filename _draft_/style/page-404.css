@@ -1,0 +1,11 @@
+.go-global-whole-wrap.go-page-404 .go-page-main-wrap .go-page-main {
+  display: flex;
+  margin: 0 auto;
+  width: 80vw;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+}
+.go-global-whole-wrap.go-page-404 .go-page-main-wrap .go-page-main .go-post-article-wrap {
+  width: 100%;
+}

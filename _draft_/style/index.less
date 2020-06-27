@@ -12,6 +12,18 @@
         // post正文展示
         .go-post-article-wrap {
             max-width: 82%;
+            flex-basis: 100%;
+            .go-change-article-nav {
+                .prev {
+                    text-align: left;
+                    position: relative;
+                }
+
+                .next {
+                    text-align: right;
+                    position: relative;
+                }
+            }
 
             .go-post-article-area {
                 margin: 1em 2em;
@@ -21,10 +33,14 @@
 
                 .go-post-article {}
 
-                .go-post-info{
+                .go-post-info {
                     display: flex;
                     flex-direction: row-reverse;
                     justify-content: space-between;
+                }
+
+                hr.go-end-line {
+                    margin: 2em auto;
                 }
             }
         }

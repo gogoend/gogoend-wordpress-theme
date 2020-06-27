@@ -3,7 +3,7 @@
  * @Author: gogoend
  * @Date: 2020-06-24 00:23:37
  * @LastEditors: gogoend
- * @LastEditTime: 2020-06-27 23:42:16
+ * @LastEditTime: 2020-06-28 00:55:17
  * @FilePath: \gogoend-wordpress-theme\single.php
  * @Description: 
  */
@@ -63,14 +63,21 @@
                                 <article class="go-post-article clear-fix markdown-body"><?php the_content(); ?></article>
                                 <?php wp_link_pages('<strong>Pages:</strong>', '', 'number'); ?>
                                 <!-- 评论框 -->
+                                <hr class="go-end-line" />
                                 <div class="comments-template">
                                     <?php comments_template(); ?>
                                 </div>
                             </section>
                         <?php endwhile; ?>
-                        <nav>
+                        
+                        <nav class="go-change-article-nav">
                             <!-- 上一篇 下一篇 -->
-                            <?php previous_post_link('%link') ?> <?php next_post_link('%link') ?>
+                            <section class="prev">
+                                <?php previous_post_link('&laquo;%link') ?>
+                            </section>
+                            <section class="next">
+                                <?php next_post_link('%link&raquo;') ?>
+                            </section>
                         </nav>
                     <?php else : ?>
                         <div class="post">

@@ -3,7 +3,7 @@
  * @Author: gogoend
  * @Date: 2020-06-23 21:22:38
  * @LastEditors: gogoend
- * @LastEditTime: 2020-06-27 22:44:44
+ * @LastEditTime: 2020-06-28 02:21:22
  * @FilePath: \gogoend-wordpress-theme\index.php
  * @Description: 增加页脚
  */
@@ -24,7 +24,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title><?php wp_title('&raquo;',true,'right'); ?><?php bloginfo('name'); ?> </title>
+  <title><?php wp_title('&raquo;', true, 'right'); ?><?php bloginfo('name'); ?> </title>
 
   <meta http-equiv="Content-Type" content="<?php bloginfo('html_type'); ?>; charset=<?php bloginfo('charset'); ?>" />
   <meta name="generator" content="WordPress <?php bloginfo('version'); ?>" />
@@ -62,9 +62,16 @@
                     ?>
                   </section>
                   <aside class="go-post-aside-info">
-                    <div class="category">
-                      分类：<?php the_category('&nbsp;') ?>
-                    </div>
+                    <section>
+                    <span>
+                        <?php echo get_the_time('Y年m月d日 H:i') ?>
+                      </span>
+                      | 
+                      <span class="category">
+                        分类：<?php the_category('&nbsp;') ?>
+                      </span>
+                    </section>
+
                     <!-- <div>
                   <?php _e('by'); ?>
                 </div>
@@ -90,7 +97,7 @@
               </li>
             <?php endif; ?>
           </ul>
-          <?php if ( function_exists('wp_pagenavi') ) wp_pagenavi(); ?>
+          <?php if (function_exists('wp_pagenavi')) wp_pagenavi(); ?>
         </div>
         <?php get_sidebar(); ?>
       </main>

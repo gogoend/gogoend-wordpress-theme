@@ -3,7 +3,7 @@
  * @Author: gogoend
  * @Date: 2020-06-24 00:36:16
  * @LastEditors: gogoend
- * @LastEditTime: 2020-06-27 21:12:41
+ * @LastEditTime: 2020-06-28 09:46:29
  * @FilePath: \gogoend-wordpress-theme\comments.php
  * @Description: 评论框
  */
@@ -100,14 +100,14 @@ $oddcomment = 'alt';
 				<p><input type="text" name="email" id="email" value="<?php echo $comment_author_email; ?>" size="40" tabindex="2" />
 					<label for="email"><small>您的邮箱（不会被公开） <?php if ($req) echo "(必填)"; ?></small></label></p>
 
-				<p><input type="text" name="url" id="url" value="<?php echo $comment_author_url; ?>" size="40" tabindex="3" />
-					<label for="url"><small>您的站点URL</small></label></p>
+				<!-- <p><input type="text" name="url" id="url" value="<?php echo $comment_author_url; ?>" size="40" tabindex="3" />
+					<label for="url"><small>您的站点URL</small></label></p> -->
 
 			<?php endif; ?>
 
 			<!--<p><small><strong>XHTML:</strong> <?php _e('You can use these tags&#58;'); ?> <?php echo allowed_tags(); ?></small></p>-->
 
-			<p><textarea name="comment" id="comment" cols="60" rows="10" tabindex="4"></textarea></p>
+			<p><textarea name="comment" id="comment" cols="40" rows="10" tabindex="4"></textarea></p>
 
 			<p><input name="submit" type="submit" id="submit" tabindex="5" value="发表评论" />
 				<input type="hidden" name="comment_post_ID" value="<?php echo $id; ?>" />

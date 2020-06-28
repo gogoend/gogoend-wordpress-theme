@@ -29,3 +29,9 @@ ul.go-post-list li.go-post-item aside.go-post-aside-info {
 ul.go-post-list li.go-post-item aside.go-post-aside-info .operation {
   display: flex;
 }
+@media screen and (max-width: 1000px) {
+  ul.go-post-list {
+    margin-right: 0;
+    padding: 0;
+  }
+}

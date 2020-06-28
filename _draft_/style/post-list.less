@@ -1,12 +1,13 @@
 ul.go-post-list {
     margin-right: 1em;
-    padding:1em;
+    padding: 1em;
+
     li.go-post-item {
         // background-color: #f0f0f0;
         position: relative;
         // margin-bottom: 1.5em;
         // box-shadow: 0 0 10px #0003;
-        padding:1em;
+        padding: 1em;
         border-bottom: 1px dashed rgb(110, 218, 164);
 
         // &::before,
@@ -37,20 +38,30 @@ ul.go-post-list {
             margin: 0 1em;
             padding: 0.5em 1em;
             border-left: 2px solid #3bd4a1;
-            color:#555;
+            color: #555;
+
             >p {
                 margin-top: 0;
                 margin-bottom: 0;
                 line-height: 1.5em;
             }
         }
-        aside.go-post-aside-info{
+
+        aside.go-post-aside-info {
             display: flex;
             justify-content: space-between;
-            margin:1em;
-            .operation{
+            margin: 1em;
+
+            .operation {
                 display: flex;
             }
         }
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    ul.go-post-list {
+        margin-right: 0;
+        padding: 0;
     }
 }

@@ -11,9 +11,12 @@
 
         // post正文展示
         .go-post-article-wrap {
-            max-width: 82%;
+            width: 82%;
             flex-basis: 100%;
+
             .go-change-article-nav {
+                margin-bottom: 1em;
+                line-height: 1.5em;
                 .prev {
                     text-align: left;
                     position: relative;
@@ -63,6 +66,74 @@
 
                 ul li {
                     line-height: 2em;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .go-page-main-wrap {
+        .go-page-main {
+            display: flex;
+            margin: 0 auto;
+            width: 100%;
+            // padding-left: 1em;
+            // padding-right: 1em;
+            flex-direction: column;
+
+            // post列表展示
+            .go-post-list-wrap {
+                flex-grow: 1;
+            }
+
+            // post正文展示
+            .go-post-article-wrap {
+                width: 100%;
+
+                .go-change-article-nav {
+                }
+
+                .go-post-article-area {
+                    margin: 0;
+                    padding: 1em;
+
+                    h1 {}
+
+                    .go-post-article {}
+
+                    .go-post-info {
+                        display: flex;
+                        flex-direction: row-reverse;
+                        justify-content: space-between;
+                    }
+
+                    hr.go-end-line {
+                        margin: 2em auto;
+                    }
+                }
+            }
+
+            .go-main-sidebar {
+                height: max-content;
+                flex-basis: 200px;
+                flex-shrink: 0;
+                flex-grow: 1;
+                width: auto;
+                padding: 1em;
+
+                .sidebar-block {
+                    h2 {
+                        margin: 0;
+                        padding: 0.5em;
+                    }
+
+                    ul {
+                        margin-left: 1em;
+                        li {
+                            line-height: 2em;
+                        }
+                    }
                 }
             }
         }

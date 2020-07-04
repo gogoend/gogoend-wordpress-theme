@@ -1,5 +1,5 @@
 .wp-pagenavi {
-  margin-top: 1em;
+  margin: 1em auto;
   text-align: center;
 }
 .wp-pagenavi .pages {

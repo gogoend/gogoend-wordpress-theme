@@ -11,7 +11,7 @@ ul.go-post-list li.go-post-item h2.post-title {
   margin: 0.5em;
 }
 ul.go-post-list li.go-post-item section.post-excerpt {
-  margin: 0 1em;
+  margin: 0 0 0 1em;
   padding: 0.5em 1em;
   border-left: 2px solid #3bd4a1;
   color: #555;

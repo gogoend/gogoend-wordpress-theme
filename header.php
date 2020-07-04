@@ -3,7 +3,7 @@
 * @Author: gogoend
 * @Date: 2020-06-23 21:32:23
  * @LastEditors: gogoend
- * @LastEditTime: 2020-07-04 15:01:33
+ * @LastEditTime: 2020-07-04 18:29:15
  * @FilePath: \gogoend-wordpress-theme\header.php
 * @Description:
 */
@@ -11,7 +11,9 @@
 <header class="go-global-header">
     <div class="go-global-header-wrap global-container-max-w">
         <div class="logo">
-            <a href="<?php bloginfo('url'); ?>"><?php bloginfo('name'); ?></a>
+            <a href="<?php bloginfo('url'); ?>">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1584 396"><circle cx="133.5" cy="262.5" r="120" fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="27"/><circle cx="434.5" cy="262.5" r="120" fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="27"/><line x1="253.5" y1="262" x2="253.5" fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="27"/><circle cx="1450.5" cy="262.5" r="120" fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="27"/><circle cx="1149.5" cy="262.5" r="120" fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="27"/><line x1="1330.5" y1="262" x2="1330.5" fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="27"/><polyline points="973 177.01 861.46 347 791.99 261.82 722.56 347 611 177" fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="27"/></svg>
+            </a>
         </div>
         <!-- <?php
                 // bloginfo('description');

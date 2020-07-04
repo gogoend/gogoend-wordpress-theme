@@ -22,6 +22,15 @@
   align-items: center;
   justify-content: space-between;
 }
+.go-global-header .go-global-header-wrap .logo {
+  height: 2.5em;
+}
+.go-global-header .go-global-header-wrap .logo a,
+.go-global-header .go-global-header-wrap .logo picture,
+.go-global-header .go-global-header-wrap .logo svg,
+.go-global-header .go-global-header-wrap .logo img {
+  height: inherit;
+}
 .go-global-header .go-global-header-wrap .go-top-link-list-wrap ul.go-top-link-list {
   display: flex;
 }

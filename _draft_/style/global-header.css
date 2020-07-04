@@ -22,9 +22,9 @@
   align-items: center;
   justify-content: space-between;
 }
-.go-global-header .go-global-header-wrap .pages-link {
+.go-global-header .go-global-header-wrap .go-top-link-list-wrap ul.go-top-link-list {
   display: flex;
 }
-.go-global-header .go-global-header-wrap .pages-link li {
+.go-global-header .go-global-header-wrap .go-top-link-list-wrap ul.go-top-link-list li {
   margin: auto 1em;
 }

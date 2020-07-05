@@ -3,7 +3,7 @@
  * @Author: gogoend
  * @Date: 2020-06-23 21:22:38
  * @LastEditors: gogoend
- * @LastEditTime: 2020-07-04 19:46:42
+ * @LastEditTime: 2020-07-05 13:07:56
  * @FilePath: \gogoend-wordpress-theme\front-page.php
  * @Description: 增加页脚
  */
@@ -42,16 +42,27 @@
 </head>
 
 <body>
-  <div class="go-global-whole-wrap">
+  <div class="go-global-whole-wrap front-page-wrap">
     <?php get_header(); ?>
     <div class="go-page-main-wrap">
-      <main class="go-page-main global-container-max-w">
-        <div>
-            Hello World~
+      <main class="go-page-main global-container-max-w-0">
+        <div class="go-slide-wrap">
+          <section class="slide-item">
+            <div class="content">
+              <section></section>
+              <section></section>
+              <section></section>
+            </div>
+          </section>
+          <section class="slide-item">
+            <div class="footer-above-wrap"></div>
+            <?php get_footer(); ?>
+          </section>
         </div>
       </main>
+      
     </div>
-    <?php get_footer(); ?>
+
   </div>
 </body>
 

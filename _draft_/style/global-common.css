@@ -13,13 +13,12 @@ a:active {
   text-decoration: underline;
 }
 ::-webkit-scrollbar {
-  background-color: transparent;
-  width: 32px;
+  background-color: #666;
+  width: 16px;
 }
 ::-webkit-scrollbar-thumb {
   background-color: #096;
-  border-radius: 16px;
-  border: 4px #fff solid;
+  border-radius: 8px;
 }
 .go-global-whole-wrap {
   display: flex;

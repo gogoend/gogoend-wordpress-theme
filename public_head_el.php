@@ -5,8 +5,7 @@
 <meta http-equiv="Content-Type" content="<?php bloginfo('html_type'); ?>; charset=<?php bloginfo('charset'); ?>" />
 
 <meta name="keywords" content="dowob,gogoend,博客,blog,前端,HTML">
-<meta name="description" content="dowob - gogoend的博客，内容主要涵盖HTML5相关领域。用心撰写，用心分享。♥">
-
+<meta name="description" content="dowob - gogoend的博客，HTML5 - 前端 领域。♥">
 
 <link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>" type="text/css" media="screen" />
 

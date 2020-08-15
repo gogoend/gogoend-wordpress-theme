@@ -63,11 +63,9 @@
                         $pLink = get_the_permalink();
                         echo <<<EOF
 <li data-id="post-$pId" class="post-item">
-<header class="post-title">
   <a title="$pTitle" href="$pLink">
     $pTitle
   </a>
-</header>
 </li>
 EOF;
                         ?>

@@ -1,4 +1,4 @@
-.go-global-footer {
+html.gogoend .global-footer {
   position: relative;
   display: flow-root;
   padding: 1em 0;
@@ -8,13 +8,13 @@
   align-items: center;
   background-color: #333;
 }
-.go-global-footer a:link,
-.go-global-footer a:visited,
-.go-global-footer a:hover,
-.go-global-footer a:active {
+html.gogoend .global-footer a:link,
+html.gogoend .global-footer a:visited,
+html.gogoend .global-footer a:hover,
+html.gogoend .global-footer a:active {
   color: currentColor;
 }
-.go-global-footer .go-global-footer-content {
+html.gogoend .global-footer .global-footer-content {
   width: 80vw;
   margin: 0 auto;
   color: #fff;
@@ -23,9 +23,9 @@
   justify-content: space-between;
   align-items: center;
 }
-.go-global-footer .go-global-footer-content .go-social-media-menu {
+html.gogoend .global-footer .global-footer-content .social-media-menu {
   display: flex;
 }
-.go-global-footer .go-global-footer-content .go-social-media-menu li {
+html.gogoend .global-footer .global-footer-content .social-media-menu li {
   margin: auto 0.5em;
 }

@@ -1,4 +1,4 @@
-.go-global-whole-wrap.go-page-404 .go-page-main-wrap .go-page-main {
+html.gogoend .global-whole-wrap.page-404 .page-main-wrap .page-main {
   display: flex;
   margin: 0 auto;
   width: 80vw;
@@ -6,6 +6,6 @@
   align-items: center;
   justify-content: center;
 }
-.go-global-whole-wrap.go-page-404 .go-page-main-wrap .go-page-main .go-post-article-wrap {
+html.gogoend .global-whole-wrap.page-404 .page-main-wrap .page-main .post-article-wrap {
   width: 100%;
 }

@@ -7,17 +7,9 @@
  * @FilePath: \gogoend-wordpress-theme\404.php
  * @Description: 
  */
-/*
- * @Author: gogoend
- * @Date: 2020-06-26 15:54:37
- * @LastEditors: gogoend
- * @LastEditTime: 2020-06-28 02:11:11
- * @FilePath: \gogoend-wordpress-theme\404.php
- * @Description: 
- */
 ?>
 <!DOCTYPE html>
-<html lang="zh">
+<html lang="zh" class="gogoend">
 
 <head>
 	<?php 
@@ -26,11 +18,11 @@
 </head>
 
 <body>
-	<div class="go-global-whole-wrap go-page-404">
+	<div class="global-whole-wrap page-404">
 		<?php get_header(); ?>
-		<div class="go-page-main-wrap">
-			<main class="go-page-main global-container-max-w">
-				<div class="go-post-article-wrap">
+		<div class="page-main-wrap">
+			<main class="page-main global-container-max-w">
+				<div class="post-article-wrap">
 					<h1>404 Not Found</h1>
 					<h2>
 						您所访问的页面不存在

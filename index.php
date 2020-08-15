@@ -19,7 +19,7 @@
 ?>
 
 <!DOCTYPE html>
-<html lang="zh">
+<html lang="zh" class="gogoend">
 
 <head>
 	<?php 
@@ -28,15 +28,15 @@
 </head>
 
 <body>
-  <div class="go-global-whole-wrap">
+  <div class="global-whole-wrap">
     <?php get_header(); ?>
-    <div class="go-page-main-wrap">
-      <main class="go-page-main global-container-max-w">
-        <div class="go-post-list-wrap">
-          <ul class="go-post-list">
+    <div class="page-main-wrap">
+      <main class="page-main global-container-max-w">
+        <div class="post-list-wrap">
+          <ul class="post-list">
             <?php if (have_posts()) : ?>
               <?php while (have_posts()) : the_post(); ?>
-                <li data-id="post-<?php the_ID(); ?>" class="go-post-item">
+                <li data-id="post-<?php the_ID(); ?>" class="post-item">
                   <h2 class="post-title">
                     <a title="<?php the_title(); ?>" href="<?php the_permalink(); ?>">
                       <?php the_title(); ?>
@@ -47,7 +47,7 @@
                     the_excerpt();
                     ?>
                   </section>
-                  <aside class="go-post-aside-info">
+                  <aside class="post-aside-info">
                     <section>
                     <span>
                         <?php echo get_the_time('Y年m月d日 H:i') ?>
@@ -78,7 +78,7 @@
               <nav>
               </nav>
             <?php else : ?>
-              <li class="go-post">
+              <li class="post">
                 <h2><?php _e('Not Found'); ?></h2>
               </li>
             <?php endif; ?>

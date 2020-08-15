@@ -1,36 +1,36 @@
-ul.go-post-list {
+html.gogoend ul.post-list {
   margin-right: 1em;
   padding: 1em;
 }
-ul.go-post-list li.go-post-item {
+html.gogoend ul.post-list li.post-item {
   position: relative;
   padding: 1em;
   border-bottom: 1px dashed #6edaa4;
 }
-ul.go-post-list li.go-post-item h2.post-title {
+html.gogoend ul.post-list li.post-item h2.post-title {
   margin: 0.5em;
 }
-ul.go-post-list li.go-post-item section.post-excerpt {
+html.gogoend ul.post-list li.post-item section.post-excerpt {
   margin: 0 0 0 1em;
   padding: 0.5em 1em;
   border-left: 2px solid #3bd4a1;
   color: #555;
 }
-ul.go-post-list li.go-post-item section.post-excerpt > p {
+html.gogoend ul.post-list li.post-item section.post-excerpt > p {
   margin-top: 0;
   margin-bottom: 0;
   line-height: 1.5em;
 }
-ul.go-post-list li.go-post-item aside.go-post-aside-info {
+html.gogoend ul.post-list li.post-item aside.post-aside-info {
   display: flex;
   justify-content: space-between;
   margin: 1em;
 }
-ul.go-post-list li.go-post-item aside.go-post-aside-info .operation {
+html.gogoend ul.post-list li.post-item aside.post-aside-info .operation {
   display: flex;
 }
 @media screen and (max-width: 1000px) {
-  ul.go-post-list {
+  ul.post-list {
     margin-right: 0;
     padding: 0;
   }

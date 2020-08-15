@@ -1,4 +1,4 @@
-.go-global-header {
+html.gogoend .global-header {
   position: relative;
   width: 100%;
   background-color: #333;
@@ -9,13 +9,13 @@
   padding: 1em 0;
   align-items: center;
 }
-.go-global-header a:link,
-.go-global-header a:visited,
-.go-global-header a:hover,
-.go-global-header a:active {
+html.gogoend .global-header a:link,
+html.gogoend .global-header a:visited,
+html.gogoend .global-header a:hover,
+html.gogoend .global-header a:active {
   color: #40d576;
 }
-.go-global-header .go-global-header-wrap {
+html.gogoend .global-header .global-header-wrap {
   margin: 0 auto;
   height: 50px;
   width: 85vw;
@@ -23,18 +23,18 @@
   align-items: center;
   justify-content: space-between;
 }
-.go-global-header .go-global-header-wrap .logo {
+html.gogoend .global-header .global-header-wrap .logo {
   height: 2.5em;
 }
-.go-global-header .go-global-header-wrap .logo a,
-.go-global-header .go-global-header-wrap .logo picture,
-.go-global-header .go-global-header-wrap .logo svg,
-.go-global-header .go-global-header-wrap .logo img {
+html.gogoend .global-header .global-header-wrap .logo a,
+html.gogoend .global-header .global-header-wrap .logo picture,
+html.gogoend .global-header .global-header-wrap .logo svg,
+html.gogoend .global-header .global-header-wrap .logo img {
   height: inherit;
 }
-.go-global-header .go-global-header-wrap .go-top-link-list-wrap ul.go-top-link-list {
+html.gogoend .global-header .global-header-wrap .top-link-list-wrap ul.top-link-list {
   display: flex;
 }
-.go-global-header .go-global-header-wrap .go-top-link-list-wrap ul.go-top-link-list li {
+html.gogoend .global-header .global-header-wrap .top-link-list-wrap ul.top-link-list li {
   margin: auto 1em;
 }

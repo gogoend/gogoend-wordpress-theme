@@ -19,7 +19,7 @@
 ?>
 
 <!DOCTYPE html>
-<html lang="zh">
+<html lang="zh" class="gogoend">
 
 <head>
 	<?php 
@@ -28,11 +28,11 @@
 </head>
 
 <body>
-  <div class="go-global-whole-wrap front-page-wrap">
+  <div class="global-whole-wrap front-page-wrap">
     <?php get_header(); ?>
-    <div class="go-page-main-wrap">
-      <main class="go-page-main">
-        <div class="go-slide-wrap">
+    <div class="page-main-wrap">
+      <main class="page-main">
+        <div class="slide-wrap">
           <section class="slide-item">
             <div class="content global-container-max-w">
               <section class="content-item" tabindex="0">
@@ -41,7 +41,7 @@
                   <p>写点东西，记录收获</p>
                 </div>
                 <div>
-                  <ul class="go-link-list go-post-list-mini">
+                  <ul class="link-list post-list-mini">
                     <?php
                     // 查询
                     query_posts('posts_per_page=6');
@@ -62,7 +62,7 @@
                         $pTitle = get_the_title();
                         $pLink = get_the_permalink();
                         echo <<<EOF
-<li data-id="post-$pId" class="go-post-item">
+<li data-id="post-$pId" class="post-item">
 <header class="post-title">
   <a title="$pTitle" href="$pLink">
     $pTitle
@@ -85,8 +85,8 @@ EOF;
               <section class="content-item" tabindex="0">
                 <div>
                   <h1>文档与项目</h1>
-                  <ul class="go-link-list go-project-abstract-list">
-                    <li class="go-link-item">
+                  <ul class="link-list project-abstract-list">
+                    <li class="link-item">
                       <section>
                         <header>
                           <h2>Three.js</h2>
@@ -98,7 +98,7 @@ EOF;
                         <article>基于WebGL的3D渲染库，中文文档的某些部分由本人翻译。</article>
                       </section>
                     </li>
-                    <li class="go-link-item">
+                    <li class="link-item">
                       <section>
                         <header>
                           <h2>Anikyu</h2>
@@ -107,7 +107,7 @@ EOF;
                         <article>一个简易的关键帧补间库，源于本人的某个Demo。</article>
                       </section>
                     </li>
-                    <li class="go-link-item">
+                    <li class="link-item">
                       <section>
                         <header>
                           <h2>FE Lab</h2>

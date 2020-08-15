@@ -8,7 +8,7 @@
  * @Description: 
  */
 ?>
-<aside class="go-main-sidebar">
+<aside class="main-sidebar">
     <ul>
         <li class="sidebar-block">
             <h2><?php _e('Categories'); ?></h2>

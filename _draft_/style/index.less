@@ -1,20 +1,20 @@
-.go-page-main-wrap {
-    .go-page-main {
+html.gogoend .page-main-wrap {
+    .page-main {
         display: flex;
         margin: 0 auto;
         width: 80vw;
 
         // post列表展示
-        .go-post-list-wrap {
+        .post-list-wrap {
             flex-grow: 1;
         }
 
         // post正文展示
-        .go-post-article-wrap {
+        .post-article-wrap {
             width: 82%;
             flex-basis: 100%;
 
-            .go-change-article-nav {
+            .change-article-nav {
                 margin-bottom: 1em;
                 line-height: 1.5em;
                 .prev {
@@ -28,13 +28,13 @@
                 }
             }
 
-            .go-post-article-area {
+            .post-article-area {
                 margin: 1em 2em;
                 padding: 1em;
 
                 h1 {}
 
-                .go-post-article {
+                .post-article {
                     figure.wp-block-image{
                         img{
                             width: auto !important;
@@ -43,19 +43,19 @@
                     }
                 }
 
-                .go-post-info {
+                .post-info {
                     display: flex;
                     flex-direction: row-reverse;
                     justify-content: space-between;
                 }
 
-                hr.go-end-line {
+                hr.end-line {
                     margin: 2em auto;
                 }
             }
         }
 
-        .go-main-sidebar {
+        .main-sidebar {
             position: sticky;
             top: 0;
             height: max-content;
@@ -80,8 +80,8 @@
 }
 
 @media screen and (max-width: 1000px) {
-    .go-page-main-wrap {
-        .go-page-main {
+    .page-main-wrap {
+        .page-main {
             display: flex;
             margin: 0 auto;
             width: 100%;
@@ -90,38 +90,38 @@
             flex-direction: column;
 
             // post列表展示
-            .go-post-list-wrap {
+            .post-list-wrap {
                 flex-grow: 1;
             }
 
             // post正文展示
-            .go-post-article-wrap {
+            .post-article-wrap {
                 width: 100%;
 
-                .go-change-article-nav {
+                .change-article-nav {
                 }
 
-                .go-post-article-area {
+                .post-article-area {
                     margin: 0;
                     padding: 1em;
 
                     h1 {}
 
-                    .go-post-article {}
+                    .post-article {}
 
-                    .go-post-info {
+                    .post-info {
                         display: flex;
                         flex-direction: row-reverse;
                         justify-content: space-between;
                     }
 
-                    hr.go-end-line {
+                    hr.end-line {
                         margin: 2em auto;
                     }
                 }
             }
 
-            .go-main-sidebar {
+            .main-sidebar {
                 height: max-content;
                 flex-basis: 200px;
                 flex-shrink: 0;

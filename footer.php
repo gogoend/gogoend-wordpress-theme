@@ -8,9 +8,9 @@
  * @Description: 
  */
 ?>
-<footer class="go-global-footer">
-    <div class="go-global-footer-content global-container-max-w">
-        <section class="go-copyright">
+<footer class="global-footer">
+    <div class="global-footer-content global-container-max-w">
+        <section class="copyright">
             Copyright © 2018-2020 <?php bloginfo('name'); ?><br />
             <a href="http://beian.miit.gov.cn/">滇ICP备18002771号-1</a>
         </section>
@@ -21,7 +21,7 @@
                     'container'  => '',  //容器标签
                     'container_class' => '', //ul父节点class值
                     'container_id'  => '',  //ul父节点id值
-                    'menu_class'   => 'go-social-media-menu',   //ul节点class值
+                    'menu_class'   => 'social-media-menu',   //ul节点class值
                     'menu_id'   => '',  //ul节点id值
                     'echo'  => true, //是否输出菜单，默认为真
                     'fallback_cb' => 'wp_page_menu',  //菜单不存在时，返回默认菜单，设为false则不返回

@@ -1,44 +1,44 @@
-.go-page-main-wrap .go-page-main {
+html.gogoend .page-main-wrap .page-main {
   display: flex;
   margin: 0 auto;
   width: 80vw;
 }
-.go-page-main-wrap .go-page-main .go-post-list-wrap {
+html.gogoend .page-main-wrap .page-main .post-list-wrap {
   flex-grow: 1;
 }
-.go-page-main-wrap .go-page-main .go-post-article-wrap {
+html.gogoend .page-main-wrap .page-main .post-article-wrap {
   width: 82%;
   flex-basis: 100%;
 }
-.go-page-main-wrap .go-page-main .go-post-article-wrap .go-change-article-nav {
+html.gogoend .page-main-wrap .page-main .post-article-wrap .change-article-nav {
   margin-bottom: 1em;
   line-height: 1.5em;
 }
-.go-page-main-wrap .go-page-main .go-post-article-wrap .go-change-article-nav .prev {
+html.gogoend .page-main-wrap .page-main .post-article-wrap .change-article-nav .prev {
   text-align: left;
   position: relative;
 }
-.go-page-main-wrap .go-page-main .go-post-article-wrap .go-change-article-nav .next {
+html.gogoend .page-main-wrap .page-main .post-article-wrap .change-article-nav .next {
   text-align: right;
   position: relative;
 }
-.go-page-main-wrap .go-page-main .go-post-article-wrap .go-post-article-area {
+html.gogoend .page-main-wrap .page-main .post-article-wrap .post-article-area {
   margin: 1em 2em;
   padding: 1em;
 }
-.go-page-main-wrap .go-page-main .go-post-article-wrap .go-post-article-area .go-post-article figure.wp-block-image img {
+html.gogoend .page-main-wrap .page-main .post-article-wrap .post-article-area .post-article figure.wp-block-image img {
   width: auto !important;
   height: auto !important;
 }
-.go-page-main-wrap .go-page-main .go-post-article-wrap .go-post-article-area .go-post-info {
+html.gogoend .page-main-wrap .page-main .post-article-wrap .post-article-area .post-info {
   display: flex;
   flex-direction: row-reverse;
   justify-content: space-between;
 }
-.go-page-main-wrap .go-page-main .go-post-article-wrap .go-post-article-area hr.go-end-line {
+html.gogoend .page-main-wrap .page-main .post-article-wrap .post-article-area hr.end-line {
   margin: 2em auto;
 }
-.go-page-main-wrap .go-page-main .go-main-sidebar {
+html.gogoend .page-main-wrap .page-main .main-sidebar {
   position: sticky;
   top: 0;
   height: max-content;
@@ -48,39 +48,39 @@
   transition: 0.5s ease all;
   padding: 1em;
 }
-.go-page-main-wrap .go-page-main .go-main-sidebar .sidebar-block h2 {
+html.gogoend .page-main-wrap .page-main .main-sidebar .sidebar-block h2 {
   margin: 0;
   padding: 0.5em 0;
 }
-.go-page-main-wrap .go-page-main .go-main-sidebar .sidebar-block ul li {
+html.gogoend .page-main-wrap .page-main .main-sidebar .sidebar-block ul li {
   line-height: 2em;
 }
 @media screen and (max-width: 1000px) {
-  .go-page-main-wrap .go-page-main {
+  .page-main-wrap .page-main {
     display: flex;
     margin: 0 auto;
     width: 100%;
     flex-direction: column;
   }
-  .go-page-main-wrap .go-page-main .go-post-list-wrap {
+  .page-main-wrap .page-main .post-list-wrap {
     flex-grow: 1;
   }
-  .go-page-main-wrap .go-page-main .go-post-article-wrap {
+  .page-main-wrap .page-main .post-article-wrap {
     width: 100%;
   }
-  .go-page-main-wrap .go-page-main .go-post-article-wrap .go-post-article-area {
+  .page-main-wrap .page-main .post-article-wrap .post-article-area {
     margin: 0;
     padding: 1em;
   }
-  .go-page-main-wrap .go-page-main .go-post-article-wrap .go-post-article-area .go-post-info {
+  .page-main-wrap .page-main .post-article-wrap .post-article-area .post-info {
     display: flex;
     flex-direction: row-reverse;
     justify-content: space-between;
   }
-  .go-page-main-wrap .go-page-main .go-post-article-wrap .go-post-article-area hr.go-end-line {
+  .page-main-wrap .page-main .post-article-wrap .post-article-area hr.end-line {
     margin: 2em auto;
   }
-  .go-page-main-wrap .go-page-main .go-main-sidebar {
+  .page-main-wrap .page-main .main-sidebar {
     height: max-content;
     flex-basis: 200px;
     flex-shrink: 0;
@@ -88,14 +88,14 @@
     width: auto;
     padding: 1em;
   }
-  .go-page-main-wrap .go-page-main .go-main-sidebar .sidebar-block h2 {
+  .page-main-wrap .page-main .main-sidebar .sidebar-block h2 {
     margin: 0;
     padding: 0.5em;
   }
-  .go-page-main-wrap .go-page-main .go-main-sidebar .sidebar-block ul {
+  .page-main-wrap .page-main .main-sidebar .sidebar-block ul {
     margin-left: 1em;
   }
-  .go-page-main-wrap .go-page-main .go-main-sidebar .sidebar-block ul li {
+  .page-main-wrap .page-main .main-sidebar .sidebar-block ul li {
     line-height: 2em;
   }
 }

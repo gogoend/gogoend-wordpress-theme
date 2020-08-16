@@ -28,7 +28,7 @@
                     <?php if (have_posts()) : ?>
                         <?php while (have_posts()) : the_post(); ?>
                             <section data-id="post-<?php the_ID(); ?>" class="post-article-area">
-                                <h1><a title="<?php the_title(); ?>" href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h1>
+                                <h1><?php the_title(); ?></h1>
                                 <aside class="post-info">
                                     <span>
                                         发布于<?php echo get_the_time('Y年m月d日 H:i') ?>，点击数：<?php post_views('', ''); ?>

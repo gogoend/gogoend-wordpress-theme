@@ -1,3 +1,4 @@
+/* 文章阅读页 */
 html.gogoend .page-main-wrap .page-main {
   display: flex;
   margin: 0 auto;
@@ -56,31 +57,31 @@ html.gogoend .page-main-wrap .page-main .main-sidebar .sidebar-block ul li {
   line-height: 2em;
 }
 @media screen and (max-width: 1000px) {
-  .page-main-wrap .page-main {
+  html.gogoend .page-main-wrap .page-main {
     display: flex;
     margin: 0 auto;
     width: 100%;
     flex-direction: column;
   }
-  .page-main-wrap .page-main .post-list-wrap {
+  html.gogoend .page-main-wrap .page-main .post-list-wrap {
     flex-grow: 1;
   }
-  .page-main-wrap .page-main .post-article-wrap {
+  html.gogoend .page-main-wrap .page-main .post-article-wrap {
     width: 100%;
   }
-  .page-main-wrap .page-main .post-article-wrap .post-article-area {
+  html.gogoend .page-main-wrap .page-main .post-article-wrap .post-article-area {
     margin: 0;
     padding: 1em;
   }
-  .page-main-wrap .page-main .post-article-wrap .post-article-area .post-info {
+  html.gogoend .page-main-wrap .page-main .post-article-wrap .post-article-area .post-info {
     display: flex;
     flex-direction: row-reverse;
     justify-content: space-between;
   }
-  .page-main-wrap .page-main .post-article-wrap .post-article-area hr.end-line {
+  html.gogoend .page-main-wrap .page-main .post-article-wrap .post-article-area hr.end-line {
     margin: 2em auto;
   }
-  .page-main-wrap .page-main .main-sidebar {
+  html.gogoend .page-main-wrap .page-main .main-sidebar {
     height: max-content;
     flex-basis: 200px;
     flex-shrink: 0;
@@ -88,14 +89,14 @@ html.gogoend .page-main-wrap .page-main .main-sidebar .sidebar-block ul li {
     width: auto;
     padding: 1em;
   }
-  .page-main-wrap .page-main .main-sidebar .sidebar-block h2 {
+  html.gogoend .page-main-wrap .page-main .main-sidebar .sidebar-block h2 {
     margin: 0;
     padding: 0.5em;
   }
-  .page-main-wrap .page-main .main-sidebar .sidebar-block ul {
+  html.gogoend .page-main-wrap .page-main .main-sidebar .sidebar-block ul {
     margin-left: 1em;
   }
-  .page-main-wrap .page-main .main-sidebar .sidebar-block ul li {
+  html.gogoend .page-main-wrap .page-main .main-sidebar .sidebar-block ul li {
     line-height: 2em;
   }
 }

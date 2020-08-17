@@ -1,4 +1,7 @@
 /* 文章阅读页 */
+html.gogoend .page-main-wrap {
+  background-color: #444;
+}
 html.gogoend .page-main-wrap .page-main {
   display: flex;
   margin: 0 auto;

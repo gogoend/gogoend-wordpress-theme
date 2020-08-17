@@ -3,6 +3,7 @@ html.gogoend .global-whole-wrap.front-page-wrap .global-header {
   z-index: 100;
   position: fixed;
   background-color: transparent;
+  background-image: none;
   backdrop-filter: blur(10px);
 }
 html.gogoend .global-whole-wrap.front-page-wrap .page-main-wrap {
